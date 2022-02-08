@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_cubit/misc/colors.dart';
 import 'package:flutter_cubit/widgets/app_large_text.dart';
 import 'package:flutter_cubit/widgets/app_text.dart';
@@ -16,7 +15,7 @@ class _WelcomePageState extends State<WelcomePage> {
   List images = [
     "welcome-one.png",
     "welcome-two.png",
-    "welcome-tree.png",
+    "welcome-three.png",
   ];
   @override
   Widget build(BuildContext context) {
@@ -42,21 +41,22 @@ class _WelcomePageState extends State<WelcomePage> {
                       children: [
                         AppLargeText(text: "Zaczynamy trening"),
                         AppText(
-                          text: "jakis tekst",
+                          text: "Zarządzaj",
                           size: 30,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
-                        Container(
+                        SizedBox(
                           width: 250,
                           child: AppText(
-                            text: "Montains",
+                            text:
+                                "Zarządzaj swoją aktywnością w prosty i wydajny sposób",
                             color: AppColors.textColor2,
                             size: 14,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40,
                         ),
                         ResponsiveButton(
